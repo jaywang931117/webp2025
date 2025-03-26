@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tree</title>
+  <style>
+    body {
+      font-family: system-ui;
+      background: #f06d06;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎄 JS Tree Console Output</h1>
+  <p>請打開 Console 查看結果</p>
+
+  <script>
+    function tree(n) {
+      printTreeTop(n);
+      printTreeBottom(n);
+    }
+
+    function printTreeTop(n) {
+      for (let i = 0; i < n; i++) {
+        let spaces = repeatchar(n - i - 1, ' ');
+        let stars = repeatchar(2 * i + 1, '*');
+        console.log(spaces + stars);
+      }
+    }
+
+    function printTreeBottom(n) {
+      let trunkHeight = 3;
+      for (let i = 0; i < trunkHeight; i++) {
+        let spaces = repeatchar(n - 1, ' ');
+        console.log(spaces + '*');
+      }
+    }
+
+    function repeatchar(n, char) {
+      return char.repeat(n);
+    }
+
+    // 呼叫：印出樹
+    tree(4);
+  </script>
+</body>
+</html>
