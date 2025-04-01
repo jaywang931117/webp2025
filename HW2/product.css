@@ -1,0 +1,48 @@
+body {
+  font-family: "微軟正黑體", sans-serif;
+  background-color: #fdfdfd;
+}
+
+.resume-container {
+  border: 2px solid #e0b67d;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.resume-header h2 {
+  color: #e0b67d;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border: 2px solid #e0b67d;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.table td {
+  border: 1px solid #d8b281;
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.title {
+  width: 20%;
+  font-weight: bold;
+  background-color: #fffaf0;
+  white-space: nowrap;
+}
+
+.profile-pic {
+  width: 160px;
+  border-radius: 8px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.highlight td {
+  background-color: #fff2e6 !important;
+}
